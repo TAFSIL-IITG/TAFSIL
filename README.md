@@ -1,11 +1,11 @@
 # TAFSIL
-TAFSIL: Taxonomy Adaptable Fine-grained Entity Recognition through Distant Supervision for Indian Languages
+**TAFSIL**: Taxonomy Adaptable Fine-grained Entity Recognition through Distant Supervision for Indian Languages
 
-- **TAFSIL Framework**: Uses Wikipedia ([link](https://www.wikipedia.org/)), Wikidata ([link](https://www.wikidata.org/wiki/Wikidata:Main_Page)), and taxonomy-specific mappings for entity extraction.
+- **TAFSIL Framework**: Uses [Wikipedia](https://www.wikipedia.org/), [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page), and taxonomy-specific mappings for entity extraction.
 - **Stage 1 (Removing Non-Entity Links)**: Filters Wikipedia hyperlinks against a master dictionary, discarding non-entity mentions to reduce false positives.
 - **Stage 2 (Exact Match Linking)**: Identifies unlinked entity mentions in Wikipedia using a trie to reduce false negatives.
 - **Stage 3 (Fuzzy Matching)**: Handles spelling variations and agglutination using an edit distance heuristic for additional entity detection.
-- **Stage 4 (Sentence Filtering)**: Uses POS tagging ([Stanza](https://github.com/stanfordnlp/stanza)) to remove sentences where entities are misclassified or missing.
+- **Stage 4 (Sentence Filtering)**: Uses [POS tagging](https://github.com/stanfordnlp/stanza) to remove sentences where entities are misclassified or missing.
 - [**TAFSIL Datasets**](https://drive.google.com/drive/folders/1dLJNMBs_L-Yd6SGbkK20eZlw0oxbUHYY?usp=sharing): Created FgER datasets using Wikidata and Wikipedia dumps from June 1, 2024, covering 24 datasets in six languages across four taxonomies.
 
 
